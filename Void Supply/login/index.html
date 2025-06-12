@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="showLogin()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="showSignup()">
+            Sign Up
+          </button>
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="checkbox" /><span class="spanlogin"
+            >Remember me</span
+          >
+          <button type="submit" class="submit-btn">Login</button>
+          <a href="#" class="forgot-password" onclick="showForgotPassword()"
+            >Forgot Password?</a
+          >
+        </form>
+
+        <form id="signup" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email ID"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="checkbox" /><span class="span-signup"
+            >agree to the terms & conditions</span
+          >
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+
+        <form id="forgot-password" class="input-group">
+          <p>Enter your User ID or Email to reset your password.</p>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User ID or Email"
+            required
+          />
+          <button type="submit" class="submit-btn">Reset Password</button>
+          <a href="#" class="back-to-login" onclick="showLogin()"
+            >Back to Login</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <section class="hero" id="login">
+      <main class="content">
+        <a href="#"></a>
+      </main>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
