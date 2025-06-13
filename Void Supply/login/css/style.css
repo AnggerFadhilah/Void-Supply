@@ -97,6 +97,10 @@ body {
   margin-top: 20px; /* Spacing for button */
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 .checkbox {
   margin: 30px 10px 30px 0;
 }
@@ -120,7 +124,7 @@ body {
   display: block;
   text-align: center;
   margin-top: 15px;
-  color: #f8f4f4;
+  color: #0e0d0d;
   text-decoration: none;
   font-size: 14px;
 }
@@ -138,10 +142,24 @@ body {
 #forgot-password {
   left: 450px; /* Initially hidden, positioned far right */
   text-align: center;
-  color: #f8f4f4;
+  color: #141414;
 }
 
 #forgot-password p {
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+.container .back-home {
+  position: absolute; /* Memposisikan tombol secara absolut */
+  top: 10px; /* Jarak dari atas */
+  right: 10px; /* Jarak dari kanan */
+  background: none;
+  border: none;
+  font-size: 24px; /* Ukuran 'X' */
+  color: #0e0d0d;
+  cursor: pointer;
+  padding: 0 10px;
+  outline: none; /* Untuk memastikan 'X' berada di tengah secara vertikal */
+  transition: color 0.3s ease;
 }
