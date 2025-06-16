@@ -178,78 +178,6 @@ if (!isset($_SESSION["login"])) {
             <span class="price">$20</span><span class="actual-price">$40</span>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card6.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card7.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card8.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card9.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card10.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
         </div>
       </div>
     </section>
@@ -257,9 +185,6 @@ if (!isset($_SESSION["login"])) {
 
     <!-- Feather Icons -->
 
-    <!-- Feather Icons -->
-  <script src="script/script.js"></script>
-  <script src="../js/script.js"></script>
   </body>
     <footer>
     <div class="socials" id= "contact">

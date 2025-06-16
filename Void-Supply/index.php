@@ -216,9 +216,7 @@
     </section>
     <!-- Navbar End -->
 
-    <!-- Feather Icons -->
 
-    <!-- Feather Icons -->
 
   </body>
 </html>
