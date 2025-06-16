@@ -52,6 +52,15 @@ if (!isset($_SESSION["login"])) {
   </head>
 
   <body>
+    <!-- BANNER -->
+     <section class="main-banner">
+      <img src="img/banner1.jpg" alt="Main Banner" class="banner-image" />
+      <div class="banner-text">
+        <h1>NEW COLLECTION 2025</h1>
+        <p>Elevate your style with VOID SUPPLY</p>
+        <a href="#new-arrival" class="banner-btn">Show More</a>
+      </div>
+    </section>
     <!-- Navbar Start -->
     <nav class="navbar">
       <a class="navbar-logo" href="#" aria-label="store logo">
@@ -61,7 +70,7 @@ if (!isset($_SESSION["login"])) {
         <a href="#new-arrival">New Arrival</a>
         <a href="#hoodie">Hoodie</a>
         <a href="#shirt">T-Shirt</a>
-        <a href="contact">Contact Us</a>
+        <a href="#contact">Contact Us</a>
       </div>
 
       <div class="navbar-extra">
@@ -76,10 +85,6 @@ if (!isset($_SESSION["login"])) {
             </div>
 
           <div class="dropdown-content">
-            <a href="profile.html">
-                <i data-feather="user" width="16" height="16"></i>
-                Profile
-            </a>
             <a href="auth/logout.php" class="logout">
                 <i data-feather="log-out" width="16" height="16"></i>
                 Logout
@@ -91,7 +96,7 @@ if (!isset($_SESSION["login"])) {
 
     <!-- Product Card Carrousel -->
 
-    <section class="product">
+    <section class="product" id="new-arrival">
       <h2 class="product-category">best selling</h2>
       <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
       <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
@@ -100,7 +105,7 @@ if (!isset($_SESSION["login"])) {
           <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <button class="card-btn" onclick="window.location.href='../Void-Supply/keranjang/index.html'">add to cart</button>
           </div>
 
           <div class="product-info">
@@ -116,7 +121,7 @@ if (!isset($_SESSION["login"])) {
           <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/card2.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <button class="card-btn" >add to cart</button>
           </div>
 
           <div class="product-info">
@@ -253,6 +258,18 @@ if (!isset($_SESSION["login"])) {
     <!-- Feather Icons -->
 
     <!-- Feather Icons -->
-
+  <script src="script/script.js"></script>
+  <script src="../js/script.js"></script>
   </body>
+    <footer>
+    <div class="socials" id= "contact">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="credit">
+      <p><a href="">Void Supply</a>. | &copy; 2025.</p>
+    </div>
+  </footer>
 </html>
