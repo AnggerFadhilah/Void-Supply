@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout – Demo</title>
+
+    <!-- Google Fonts – bebas diganti -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS utama -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================== WRAPPER ================== -->
+    <div class="checkout-container">
+      <!-- ========== AREA KIRI (keranjang / detail barang) ========== -->
+      <section class="cart-area">
+        <!-- ====== BLOK TOKO ====== -->
+        <div class="store-block">
+          <header class="store-header">
+            <input type="checkbox" class="checkbox" />
+            <span class="store-name">Jualan Saya (Jakarta)</span>
+            <span class="badge badge-ready">Siap Kirim</span>
+            <a href="#" class="link-kirim">Atur Pengiriman</a>
+          </header>
+
+          <!-- ====== ITEM DI TOKO ====== -->
+          <article class="item-row">
+            <div class="item-img">
+              <img src="https://via.placeholder.com/70" alt="Produk" />
+            </div>
+
+            <div class="item-desc">
+              <h4>Wireless Headphone H‑300</h4>
+              <p class="variation">Warna: Hitam | Garansi Resmi 1 thn</p>
+              <a href="#" class="link-note">Tulis catatan untuk penjual</a>
+            </div>
+
+            <div class="item-qty">
+              <span>1</span>
+            </div>
+
+            <div class="item-price">
+              <span>Rp 245.000</span>
+            </div>
+
+            <button class="item-remove" title="Hapus">&#10005;</button>
+          </article>
+
+          <!-- ====== PENGIRIMAN (per toko) ====== -->
+          <div class="shipping-row">
+            <label for="courierA" class="shipping-label"
+              >Opsi Pengiriman:</label
+            >
+            <select id="courierA">
+              <option>JNE YES - Rp 12.000 (1-2 hari)</option>
+              <option>- Rp 9.000 (2-4 hari)</option>
+              <option>Sicepat - Rp 10.000 (1-3 hari)</option>
+            </select>
+            <span class="shipping-cost">Rp 12.000</span>
+          </div>
+
+          <footer class="block-foot">
+            <span class="text-right"
+              >Belanja dari toko ini: <strong>Rp 257.000</strong></span
+            >
+          </footer>
+        </div>
+        <!-- ====== /BLOK TOKO ====== -->
+
+        <!-- ====== TOKO LAIN (contoh kedua)—kopi‐paste blok sebelumnya bila perlu ====== -->
+        <div class="store-block">
+          <header class="store-header">
+            <input type="checkbox" class="checkbox" />
+            <span class="store-name">Gadget Pro Store (Bandung)</span>
+            <span class="badge badge-preorder">Pre‑Order</span>
+            <a href="#" class="link-kirim">Atur Pengiriman</a>
+          </header>
+
+          <article class="item-row">
+            <div class="item-img">
+              <img src="https://via.placeholder.com/70" alt="Produk" />
+            </div>
+            <div class="item-desc">
+              <h4>Keyboard Mechanical RGB K‑680</h4>
+              <p class="variation">Switch: Brown | Layout: ISO</p>
+              <a href="#" class="link-note">Tulis catatan untuk penjual</a>
+            </div>
+            <div class="item-qty">
+              <span>1</span>
+            </div>
+            <div class="item-price">
+              <span>Rp 495.000</span>
+            </div>
+            <button class="item-remove" title="Hapus">&#10005;</button>
+          </article>
+
+          <div class="shipping-row">
+            <label for="courierB" class="shipping-label"
+              >Opsi Pengiriman:</label
+            >
+            <select id="courierB">
+              <option>Sicepat – Rp 14.000 (1‑3 hari)</option>
+              <option>J&T – Rp 13.000 (2‑4 hari)</option>
+            </select>
+            <span class="shipping-cost">Rp 14.000</span>
+          </div>
+
+          <footer class="block-foot">
+            <span class="text-right"
+              >Belanja dari toko ini: <strong>Rp 509.000</strong></span
+            >
+          </footer>
+        </div>
+        <!-- ====== /TOKO LAIN ====== -->
+
+        <!-- ====== BLOK VOUCHER ====== -->
+        <div class="voucher-block">
+          <header>
+            <h4>Voucher Toko/Promo</h4>
+            <a href="#" class="link-apply">Pilih Voucher</a>
+          </header>
+        </div>
+
+        <!-- ====== BLOK METODE PEMBAYARAN ====== -->
+        <div class="payment-block">
+          <h3>Metode Pembayaran</h3>
+
+          <!-- Tab Navigation -->
+          <div class="tab-nav">
+            <button class="tab active" data-target="transfer">
+              Transfer Bank
+            </button>
+            <button class="tab" data-target="virtual">Virtual Account</button>
+            <button class="tab" data-target="ewallet">E‑Wallet</button>
+            <button class="tab" data-target="cod">COD / Bayar Di Tempat</button>
+          </div>
+
+          <!--  ▼▼▼ ISI TIAP TAB ▼▼▼ -->
+          <div class="tab-content">
+            <!-- === Transfer Bank === -->
+            <div class="pane active" id="transfer">
+              <label class="radio-pay">
+                <input type="radio" name="pay" checked />
+                <img src="bank-bca.svg" alt="BCA" /> BCA
+              </label>
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                <img src="bank-bni.svg" alt="BNI" /> BNI
+              </label>
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                <img src="bank-mandiri.svg" alt="Mandiri" /> Mandiri
+              </label>
+            </div>
+
+            <!-- === Virtual Account === -->
+            <div class="pane" id="virtual">
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                <img src="va-bca.svg" alt="BCA VA" /> BCA Virtual Account
+              </label>
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                <img src="va-bri.svg" alt="BRI VA" /> BRI Virtual Account
+              </label>
+            </div>
+
+            <!-- === E‑Wallet === -->
+            <div class="pane" id="ewallet">
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                <img src="ovo.svg" alt="OVO" /> OVO
+              </label>
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                <img src="gopay.svg" alt="GoPay" /> GoPay
+              </label>
+            </div>
+
+            <!-- === COD === -->
+            <div class="pane" id="cod">
+              <p class="cod-info">Pembayaran dilakukan saat barang tiba.</p>
+              <label class="radio-pay">
+                <input type="radio" name="pay" />
+                COD – Tunai
+              </label>
+            </div>
+          </div>
+          <!-- /tab-content -->
+        </div>
+        <!-- /payment-block -->
+      </section>
+      <!-- ========== /AREA KIRI ========== -->
+
+      <!-- ========== AREA KANAN (ringkasan) ========== -->
+      <aside class="summary-area">
+        <h3>Ringkasan Belanja</h3>
+
+        <table class="summary-table">
+          <tr>
+            <td>Subtotal (2 barang)</td>
+            <td class="text-right">Rp 740.000</td>
+          </tr>
+          <tr>
+            <td>Total Ongkir</td>
+            <td class="text-right">Rp 26.000</td>
+          </tr>
+          <tr>
+            <td>Asuransi</td>
+            <td class="text-right">Rp 0</td>
+          </tr>
+          <tr class="disc">
+            <td>Potongan Voucher</td>
+            <td class="text-right">‑ Rp 10.000</td>
+          </tr>
+          <tr class="total">
+            <td>Total Pembayaran</td>
+            <td class="text-right"><strong>Rp 756.000</strong></td>
+          </tr>
+        </table>
+
+        <button class="btn-submit">Buat Pesanan</button>
+      </aside>
+      <!-- ========== /AREA KANAN ========== -->
+    </div>
+    <!-- /checkout-container -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
