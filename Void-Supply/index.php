@@ -16,7 +16,7 @@
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="script/script.js"></script>
+
 
 
     <!-- Style -->
@@ -32,9 +32,7 @@
       </a>
       <div class="navbar-nav">
         <a href="#new-arrival">New Arrival</a>
-        <a href="#hoodie">Hoodie</a>
-        <a href="#shirt">T-Shirt</a>
-        <a href="contact">Contact Us</a>
+        <a href="#contact">Contact Us</a>
       </div>
 
       <div class="navbar-extra">
@@ -55,161 +53,107 @@
       </div>
     </nav>
 
+        <!-- BANNER -->
+     <section class="main-banner">
+      <img src="img/banner1.jpg" alt="Main Banner" class="banner-image" />
+      <div class="banner-text">
+        <h1>NEW COLLECTION 2025</h1>
+        <p>Elevate your style with VOID SUPPLY</p>
+        <a href="auth/login.php" class="banner-btn">Show More</a>
+      </div>
+    </section>
+
     <!-- Product Card Carrousel -->
 
-    <section class="product">
-      <h2 class="product-category">best selling</h2>
+
+    <section class="product" id="new-arrival">
+      <h2 class="product-category">new arrival</h2>
       <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
       <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
       <div class="product-container">
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <img
+              src="../Void-Supply/img/Tshirt.jpg"
+              class="product-thumb"
+              alt=""
+            />
           </div>
-
           <div class="product-info">
             <h2 class="product-brand">T-Shirt</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.100.000</span
+            ><span class="actual-price">Rp.200.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card2.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <img
+              src="../Void-Supply/img/hoodie.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            
           </div>
 
           <div class="product-info">
-            <h2 class="product-brand">Hoodie</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <h2 class="product-brand">Hoodie</h2> 
+            <span class="price">Rp.250.000</span
+            ><span class="actual-price">Rp.500.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card3.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <img
+              src="../Void-Supply/img/long sleeve.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            
           </div>
 
           <div class="product-info">
             <h2 class="product-brand">Long Sleeve</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.70.000</span
+            ><span class="actual-price">Rp.140.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card4.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <img
+              src="../Void-Supply/img/cargo pants.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            
           </div>
           <div class="product-info">
             <h2 class="product-brand">Cargo Pants</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.150.000</span
+            ><span class="actual-price">Rp.300.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card5.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
+            <img
+              src="../Void-Supply/img/short.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            
           </div>
           <div class="product-info">
             <h2 class="product-brand">short</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card6.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card7.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card8.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card9.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="img/card10.jpg" class="product-thumb" alt="" />
-            <button class="card-btn">add to cart</button>
-          </div>
-
-          <div class="product-info">
-            <h2 class="product-brand">brand</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.50.000</span
+            ><span class="actual-price">Rp.100.000</span>
           </div>
         </div>
       </div>
@@ -219,4 +163,17 @@
 
 
   </body>
+
+  <footer>
+    <div class="socials" id="contact">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="credit">
+      <pv><a href="">Void Supply</a>. | &copy; 2025.</pv>
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
 </html>

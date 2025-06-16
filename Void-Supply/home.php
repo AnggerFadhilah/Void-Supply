@@ -43,7 +43,6 @@ if (!isset($_SESSION["login"])) {
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="script/script.js"></script>
 
 
     <!-- Style -->
@@ -95,92 +94,259 @@ if (!isset($_SESSION["login"])) {
     </nav>
 
     <!-- Product Card Carrousel -->
+     <!-- NEW ARRIVAL -->
 
     <section class="product" id="new-arrival">
-      <h2 class="product-category">best selling</h2>
+      <h2 class="product-category">new arrival</h2>
       <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
       <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
       <div class="product-container">
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-btn" onclick="window.location.href='../Void-Supply/keranjang/index.html'">add to cart</button>
+            <img
+              src="../Void-Supply/img/Tshirt.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button
+              class="card-btn"
+              onclick="window.location.href='../Void-Supply/keranjang/index.html'"
+            >
+              Add Cart
+            </button>
           </div>
-
           <div class="product-info">
             <h2 class="product-brand">T-Shirt</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.100.000</span
+            ><span class="actual-price">Rp.200.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card2.jpg" class="product-thumb" alt="" />
-            <button class="card-btn" >add to cart</button>
+            <img
+              src="../Void-Supply/img/hoodie.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to cart</button>
           </div>
 
           <div class="product-info">
             <h2 class="product-brand">Hoodie</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.250.000</span
+            ><span class="actual-price">Rp.500.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card3.jpg" class="product-thumb" alt="" />
+            <img
+              src="../Void-Supply/img/long sleeve.jpg"
+              class="product-thumb"
+              alt=""
+            />
             <button class="card-btn">add to cart</button>
           </div>
 
           <div class="product-info">
             <h2 class="product-brand">Long Sleeve</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.70.000</span
+            ><span class="actual-price">Rp.140.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card4.jpg" class="product-thumb" alt="" />
+            <img
+              src="../Void-Supply/img/cargo pants.jpg"
+              class="product-thumb"
+              alt=""
+            />
             <button class="card-btn">add to cart</button>
           </div>
           <div class="product-info">
             <h2 class="product-brand">Cargo Pants</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.150.000</span
+            ><span class="actual-price">Rp.300.000</span>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="img/card5.jpg" class="product-thumb" alt="" />
+            <img
+              src="../Void-Supply/img/short.jpg"
+              class="product-thumb"
+              alt=""
+            />
             <button class="card-btn">add to cart</button>
           </div>
           <div class="product-info">
             <h2 class="product-brand">short</h2>
-            <p class="product-short-description">
-              a short line about the cloth..
-            </p>
-            <span class="price">$20</span><span class="actual-price">$40</span>
+            <span class="price">Rp.50.000</span
+            ><span class="actual-price">Rp.100.000</span>
           </div>
-        </div>
         </div>
       </div>
     </section>
+
+         <!-- HOODIE -->
+
+    <section class="product" id="hoodie">
+      <h2 class="product-category">hoodie</h2>
+      <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/Tshirt.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button
+              class="card-btn"
+              onclick="window.location.href='../Void-Supply/keranjang/index.html'"
+            >
+              Add Cart
+            </button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">T-Shirt</h2>
+            <span class="price">Rp.100.000</span
+            ><span class="actual-price">Rp.200.000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/hoodie.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to cart</button>
+          </div>
+
+          <div class="product-info">
+            <h2 class="product-brand">Hoodie</h2>
+            <span class="price">Rp.250.000</span
+            ><span class="actual-price">Rp.500.000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/long sleeve.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to cart</button>
+          </div>
+
+          <div class="product-info">
+            <h2 class="product-brand">Long Sleeve</h2>
+            <span class="price">Rp.70.000</span
+            ><span class="actual-price">Rp.140.000</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+         <!-- T-Shirt -->
+
+    <section class="product" id="shirt">
+      <h2 class="product-category">t-Shirt</h2>
+      <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
+      <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/Tshirt.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button
+              class="card-btn"
+              onclick="window.location.href='../Void-Supply/keranjang/index.html'"
+            >
+              Add Cart
+            </button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">T-Shirt</h2>
+            <span class="price">Rp.100.000</span
+            ><span class="actual-price">Rp.200.000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/hoodie.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to cart</button>
+          </div>
+
+          <div class="product-info">
+            <h2 class="product-brand">Hoodie</h2>
+            <span class="price">Rp.250.000</span
+            ><span class="actual-price">Rp.500.000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/long sleeve.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to cart</button>
+          </div>
+
+          <div class="product-info">
+            <h2 class="product-brand">Long Sleeve</h2>
+            <span class="price">Rp.70.000</span
+            ><span class="actual-price">Rp.140.000</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img
+              src="../Void-Supply/img/cargo pants.jpg"
+              class="product-thumb"
+              alt=""
+            />
+            <button class="card-btn">add to cart</button>
+          </div>
+          <div class="product-info">
+            <h2 class="product-brand">Cargo Pants</h2>
+            <span class="price">Rp.150.000</span
+            ><span class="actual-price">Rp.300.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Navbar End -->
 
     <!-- Feather Icons -->
@@ -197,4 +363,5 @@ if (!isset($_SESSION["login"])) {
       <p><a href="">Void Supply</a>. | &copy; 2025.</p>
     </div>
   </footer>
+  <script src="script/script.js"></script>
 </html>
