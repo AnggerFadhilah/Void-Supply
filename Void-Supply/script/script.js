@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Product carousel logic
-  const productContainers = [...document.querySelectorAll(".product-container")];
+  const productContainers = [
+    ...document.querySelectorAll(".product-container"),
+  ];
   const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
   const preBtn = [...document.querySelectorAll(".pre-btn")];
 
@@ -33,5 +35,18 @@ document.addEventListener("DOMContentLoaded", () => {
     preBtn[i].addEventListener("click", () => {
       item.scrollLeft -= containerWidth;
     });
+  });
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   });
 });

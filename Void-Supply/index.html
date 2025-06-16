@@ -36,15 +36,28 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="../Void Supply/keranjang/index.html" id="cart"><i data-feather="shopping-bag"></i></a>
+        <a href="../Void Supply/keranjang/index.html" id="cart"
+          ><i data-feather="shopping-bag"></i
+        ></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         <a href="login/index.html" user><i data-feather="user"></i></a>
       </div>
     </nav>
 
+    <!-- Banner Header Start -->
+    <section class="main-banner">
+      <img src="img/banner1.jpg" alt="Main Banner" class="banner-image" />
+      <div class="banner-text">
+        <h1>NEW COLLECTION 2025</h1>
+        <p>Elevate your style with VOID SUPPLY</p>
+        <a href="#new-arrival" class="banner-btn">Show More</a>
+      </div>
+    </section>
+    <!-- Banner Header End -->
+
     <!-- Product Card Carrousel -->
 
-    <section class="product">
+    <section class="product" id="new-arrival">
       <h2 class="product-category">best selling</h2>
       <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
       <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
@@ -53,7 +66,12 @@
           <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="img/card1.jpg" class="product-thumb" alt="" />
-            <button class="card-btn"onclick="window.location.href='../Void Supply/keranjang/index.html'">Add Cart</button>
+            <button
+              class="card-btn"
+              onclick="window.location.href='../Void Supply/keranjang/index.html'"
+            >
+              Add Cart
+            </button>
           </div>
           <div class="product-info">
             <h2 class="product-brand">T-Shirt</h2>
@@ -202,11 +220,21 @@
     </section>
     <!-- Navbar End -->
 
-    <!-- Feather Icons -->
-
     <script src="script/script.js"></script>
     <script>
       feather.replace();
     </script>
   </body>
+
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+
+    <div class="credit">
+      <p><a href="">Void Supply</a>. | &copy; 2025.</p>
+    </div>
+  </footer>
 </html>
