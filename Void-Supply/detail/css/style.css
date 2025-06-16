@@ -91,7 +91,9 @@ h2 {
 }
 
 .options button:hover {
-  border-color: rgb(3, 3, 3);
+  background-color: rgb(12, 12, 12);
+  color: rgb(250, 249, 249);
+  border: 0px solid rgb(10, 10, 10);
 }
 
 input[type="number"] {

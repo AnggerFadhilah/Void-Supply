@@ -78,6 +78,7 @@
               src="../Void-Supply/img/Tshirt.jpg"
               class="product-thumb"
               alt=""
+              onclick="window.location.href='../Void-Supply/detail/tshirt.html'"
             />
           </div>
           <div class="product-info">
@@ -94,6 +95,7 @@
               src="../Void-Supply/img/hoodie.jpg"
               class="product-thumb"
               alt=""
+              onclick="window.location.href='../Void-Supply/detail/hoodie.html'"
             />
             
           </div>
@@ -112,6 +114,7 @@
               src="../Void-Supply/img/long sleeve.jpg"
               class="product-thumb"
               alt=""
+              onclick="window.location.href='../Void-Supply/detail/long.html'"
             />
             
           </div>
@@ -130,6 +133,7 @@
               src="../Void-Supply/img/cargo pants.jpg"
               class="product-thumb"
               alt=""
+              onclick="window.location.href='../Void-Supply/detail/cargo.html'"
             />
             
           </div>
@@ -147,6 +151,7 @@
               src="../Void-Supply/img/short.jpg"
               class="product-thumb"
               alt=""
+              onclick="window.location.href='../Void-Supply/detail/short.html'"
             />
             
           </div>
