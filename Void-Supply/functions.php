@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "", "void-supply");
+    $conn = mysqli_connect("localhost", "root", "", "Void-Supply");
 
     function query($query)
     {

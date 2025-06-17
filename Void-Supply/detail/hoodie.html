@@ -13,7 +13,7 @@
           <img src="../img/hoodie.jpg" alt="" class="main-img" />
         </div>
 
-        <div class="info">
+        <div class="info" id="2">
           <h2>Hoodie</h2>
           <br />
           <div class="price">
@@ -45,7 +45,10 @@
             <input type="number" value="1" min="1" />
           </div>
           <div class="actions">
-            <button class="add-to-cart">
+            <button
+              class="add-to-cart"
+              onclick="addToCart('2', 'hoodie', 250000, '../img/hoodie.jpg')"
+            >
               <a href="../keranjang/index.html">Masukkan Keranjang</a>
             </button>
             <button class="buy">
