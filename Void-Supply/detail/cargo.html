@@ -3,21 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toko Klontong - T-Shirt</title>
+    <title>Toko Klontong - Cargo Pants</title>
     <link rel="stylesheet" href="../detail/css/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="product-detail">
         <div class="image-gallery">
-          <img src="../img/cargo pants.jpg" alt="" class="main-img" />
+          <img
+            src="../img/cargo pants.jpg"
+            alt="Cargo Pants"
+            class="main-img"
+          />
         </div>
 
-        <div class="info">
-          <h2>Cargo Pants</h2>
+        <div class="info" id="4">
+          <h2 id="product-name">Cargo</h2>
           <br />
           <div class="price">
-            <span class="current">Rp150.000</span>
+            <span class="current" id="product-price" data-raw-price="150000"
+              >Rp150.000</span
+            >
             <span class="old">Rp.300.000</span>
           </div>
           <div class="Deskripsi">
@@ -34,23 +40,34 @@
           </div>
           <div class="size">
             <label>Ukuran:</label>
-            <div class="options">
-              <button>M</button>
-              <button>L</button>
-              <button>XL</button>
-              <button>XXL</button>
+            <div class="options" id="size-options">
+              <button data-size="M">M</button>
+              <button data-size="L">L</button>
+              <button data-size="XL">XL</button>
+              <button data-size="XXL">XXL</button>
             </div>
+            <p
+              id="size-warning"
+              style="
+                color: red;
+                font-size: 0.9em;
+                margin-top: 5px;
+                display: none;
+              "
+            >
+              Pilih ukuran terlebih dahulu!
+            </p>
           </div>
           <div class="quantity">
             <label>Jumlah:</label>
-            <input type="number" value="1" min="1" />
+            <input type="number" value="1" min="1" id="product-quantity" />
           </div>
           <div class="actions">
             <button
               class="add-to-cart"
-              onclick="addToCart('Cargo Pants', '../img/cargo pants.jpg', 150000)"
+              onclick="addToCart('4', 'Cargo Pants', 150000, '../img/cargo pants.jpg')"
             >
-              Masukkan Keranjang
+              <a href="../keranjang/index.html">Masukkan Keranjang</a>
             </button>
             <button class="buy">
               <a href="../checkout/index.html">Belanja Sekarang</a>

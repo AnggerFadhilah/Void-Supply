@@ -1,34 +1,60 @@
-function changeQty(button, delta) {
-  const qtyInput = button.parentElement.querySelector("input");
-  let qty = parseInt(qtyInput.value);
-  qty = Math.max(1, qty + delta);
-  qtyInput.value = qty;
+function loadCart() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartContainer = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
 
-  const cartItem = button.closest(".cart-item");
-  const price = parseInt(cartItem.querySelector(".unit-price").innerText);
-  cartItem.querySelector(".item-total span").innerText = price * qty;
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Keranjang kosong.</p>";
+    cartTotal.innerHTML = "";
+    return;
+  }
 
-  updateGrandTotal();
-}
+  let html = "<ul>";
+  let total = 0;
 
-function removeItem(button) {
-  button.closest(".cart-item").remove();
-  updateGrandTotal();
-}
+  cart.forEach((item, index) => {
+    const subtotal = item.price * item.qty;
+    total += subtotal;
 
-function updateGrandTotal() {
-  const totals = document.querySelectorAll(".item-total span");
-  let grandTotal = 0;
-  totals.forEach((span) => {
-    grandTotal += parseInt(span.innerText);
+    html += `
+          <li>
+            <img src="${item.image}" />
+            <div class="cart-info">
+              <strong>${item.name}</strong><br>
+              Harga: Rp.${item.price.toLocaleString()}<br>
+              Jumlah: 
+              <input type="number" min="1" class="qty-input" value="${
+                item.qty
+              }" onchange="updateQty(${index}, this.value)">
+              <br>
+              Subtotal: Rp.${subtotal.toLocaleString()}
+            </div>
+            <button class="remove-btn" onclick="removeItem(${index})">Hapus</button>
+          </li>
+        `;
   });
-  document.getElementById("grand-total").innerText = grandTotal;
+
+  html += "</ul>";
+  cartContainer.innerHTML = html;
+  cartTotal.innerHTML = `Total Belanja: Rp.${total.toLocaleString()}`;
 }
-document.querySelector(".add-to-cart").addEventListener("click", () => {
-  const product = {
-    name: "Tshirt",
-    price: 100000,
-    quantity: document.querySelector(".quantity input").value,
-  };
-  localStorage.setItem("cart", JSON.stringify([product]));
-});
+
+function updateQty(index, newQty) {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const qty = parseInt(newQty);
+  if (qty <= 0 || isNaN(qty)) return;
+
+  cart[index].qty = qty;
+  localStorage.setItem("cart", JSON.stringify(cart));
+  loadCart();
+}
+
+function removeItem(index) {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  loadCart();
+}
+
+// Load saat halaman dibuka
+loadCart();
