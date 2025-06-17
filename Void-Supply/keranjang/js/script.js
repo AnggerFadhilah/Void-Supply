@@ -26,8 +26,8 @@ function updateGrandTotal() {
 }
 document.querySelector(".add-to-cart").addEventListener("click", () => {
   const product = {
-    name: "Celana Despo",
-    price: 38500,
+    name: "Tshirt",
+    price: 100000,
     quantity: document.querySelector(".quantity input").value,
   };
   localStorage.setItem("cart", JSON.stringify([product]));
