@@ -38,3 +38,30 @@ img {
   margin-top: 20px;
   font-size: 18px;
 }
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.cart-footer .total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-footer button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-footer button:hover {
+  background-color: #e74c3c;
+}
